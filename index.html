@@ -1,50 +1,149 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/codecentric.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal cc-logo">
+		<div class="slides">
+			<!-- <section data-background-size="60%" data-background-position="90% -1%" data-background-image="./images/logo.png"
+				data-markdown="slides/00-intro.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"
+				data-separator-notes="^Note:" data-charset="utf-8">
+				<img data-src="images/CC_RGB_onWhite.png" />
+			</section> -->
+
+			<section>
+				<h1>React</h1>
+			</section>
+
+			<section>
+				<h2>Before we begin, let's hear</h2>
+				<ul>
+					<li>who are you?</li>
+					<li>what is your JS/React knowledge?</li>
+					<li>what do you expect?</li>
+				</ul>
+			</section>
+
+			<section>
+
+				<section>
+					<h1>What to expect?</h1>
+				</section>
+
+				<section>
+					<h2>Part 1: Why React?</h2>
+					<ul>
+						<li>Motivation</li>
+						<li>Concepts</li>
+						<li>First steps with React</li>
+						<li>React and ESnext</li>
+						<li>JSX</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Part 2: Diving deeper into React</h2>
+					<ul>
+						<li>Creating a component (class and function)</li>
+						<li>Properties and state</li>
+						<li>Lifecycle of a class component</li>
+						<li>Lifecycle of a function component</li>
+						<li>User interaction</li>
+						<li>Communication between components</li>
+						<li>React hooks</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Part 3: Testing</h2>
+					<ul>
+						<li>Getting started with Jest</li>
+						<li>Snapshot testing</li>
+						<li>Using enzyme or react-testing-library</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Part 4: Handling state</h2>
+					<ul>
+						<li>React Context API</li>
+						<li>Redux and Redux Saga (for side effects)</li>
+						<li>MobX</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h1>Format of the training</h1>
+
+				<ul>
+					<li>Slides and programming exercises</li>
+					<li>Work in pairs if you like</li>
+				</ul>
+			</section>
+
+			<section>
+				<section>
+					<h1>Prerequisites</h1>
+
+					<ul>
+						<li>Working internet connection</li>
+						<li>An editor of choice (e.g. Visual Studio Code)</li>
+						<li>node.js installed in version >= 10 and working</li>
+						<li>docker and docker-compose installed</li>
+						<li>Some basic knowledge of JavaScript</li>
+						<li>Some basic knowledge with Web-Apps</li>
+					</ul>
+				</section>
+				<section>
+					<h2>First tasks</h2>
+					<pre><code class="hljs bash">node -v # e.g. v12.14.1</code></pre>
+					<pre><code class="hljs bash">npm -v # e.g. 6.13.6</code></pre>
+					<pre><code class="hljs bash">docker -v # e.g. Docker version 19.03.5</code></pre>
+					<pre><code class="hljs bash">git clone ... </code></pre>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			hash: true,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/highlight/highlight.js' },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+</body>
+
 </html>
